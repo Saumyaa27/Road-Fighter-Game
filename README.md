@@ -7,6 +7,8 @@ The game is a single-player type in the racing genre. The game loads with a star
 
 Controls-
 SPACEBAR_KEY: to start the game/ restart the game
+
 LEFT_ARROW_KEY: to move left
+
 RIGHT_ARROW_KEY: to move right
 
