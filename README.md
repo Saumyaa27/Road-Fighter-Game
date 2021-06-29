@@ -1,31 +1,39 @@
 # Road-Fighter-Game
 Road Fighter Game using OpenGL
 
-<U>INTRODUCTION:</U>
+**INTRODUCTION:**
 
 The game is a single-player type in the racing genre. The game loads with a start screen. The start screen mentions the controls used to play the game. To start the game, the user would have to press the spacebar key. When the game starts we see a forest scene wherein there is a road with lots of cars. There is a player (main car) that has to race forward while saving itself from colliding with other vehicles which act as obstacles. These vehicles(obstacles) move in the opposite direction to that of the main car (player). To save itself from colliding the player car can move in the left and right direction. The game has 2 levels. The first level has a forest scene. When the score becomes higher than 500 points, level 2 automatically starts. In level 2, the view changes to the city scene, and the obstacle cars change to more powerful racer cars. The lives and the real-time score are continuously displayed on the screen. The player car has 3 lives i.e. it can collide a maximum of 3 times with the obstacle cars, after which the game would end. When the game gets over, the score for the current game along with the highest score of all the consecutive games is displayed on the screen. The user can replay the game by pressing the spacebar key.
 
-CONTROLS-
+**CONTROLS-**
 SPACEBAR_KEY: to start the game/ restart the game
 
 LEFT_ARROW_KEY: to move left
 
 RIGHT_ARROW_KEY: to move right
 
-FUNCTIONS IMPLEMENTED:
-Move: It is used to do smooth transitioning of the vehicle, as instead of directly translating the vehicle from one lane to another, it will translate in small gaps, which gives a smooth transition effect.
+**FUNCTIONS IMPLEMENTED:**
 
-OtherV_pos: This function is used to initialize the other vehicle's position. It uses random numbers to decide in which lane the car should be and stores these values in an array which can then be used for displaying cars.
+Move: <BR>
+It is used to do smooth transitioning of the vehicle, as instead of directly translating the vehicle from one lane to another, it will translate in small gaps, which gives a smooth transition effect.
 
-Initialize: It is used to reset the game after the collision, as after the collision, life is decreased by 1 and the other vehicles are sent back to their starting position. And the Main vehicle is also brought back to its original place.
+OtherV_pos: <BR>
+This function is used to initialize the other vehicle's position. It uses random numbers to decide in which lane the car should be and stores these values in an array which can then be used for displaying cars.
 
-drawRoad: It is used to draw the road, as it makes a rectangle of grey colour, which will function as the road.
+Initialize: <BR>
+It is used to reset the game after the collision, as after the collision, life is decreased by 1 and the other vehicles are sent back to their starting position. And the Main vehicle is also brought back to its original place.
 
-drawDivider: It is used to draw the white lines on the road, which signifies the lanes of the road. The moving effect is given by translating the divider of the road.
+drawRoad: <BR>
+It is used to draw the road, as it makes a rectangle of grey colour, which will function as the road.
 
-SpecialKey: It is used to move the car left and right, it detects the keypress and accordingly it decides if the car is to be translated to left or right.
+drawDivider:  <BR>
+It is used to draw the white lines on the road, which signifies the lanes of the road. The moving effect is given by translating the divider of the road.
 
-NormalKey: It is used to start the game. If the user presses the space key on the start or end screen then it will detect that and start the game, also if the user presses ESC key it quits the game.
+SpecialKey: <BR>
+It is used to move the car left and right, it detects the keypress and accordingly it decides if the car is to be translated to left or right.
+
+NormalKey:  <BR>
+It is used to start the game. If the user presses the space key on the start or end screen then it will detect that and start the game, also if the user presses ESC key it quits the game.
 
 Game_end: It is used to display the end game screen. This screen shows the current score, the highest score of the current session. Also, the player can restart the game by pressing the space key.
 
